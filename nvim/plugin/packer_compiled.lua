@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/carsonep/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/carsonep/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/home/carsonep/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/home/carsonep/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/carsonep/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -109,6 +109,12 @@ _G.packer_plugins = {
     path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gruvbox-material"] = {
+    config = { "\27LJ\2\n¬\1\0\0\3\0\t\0\0146\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0'\2\b\0B\0\2\1K\0\1\0\21gruvbox-material\16colorscheme\bcmd\thard gruvbox_material_background\roriginal gruvbox_material_foreground\6g\bvim\0" },
+    loaded = true,
+    path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   harpoon = {
     loaded = true,
     path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -159,12 +165,6 @@ _G.packer_plugins = {
     path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/carsonep/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -183,10 +183,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: gruvbox-material
+time([[Config for gruvbox-material]], true)
+try_loadstring("\27LJ\2\n¬\1\0\0\3\0\t\0\0146\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0'\2\b\0B\0\2\1K\0\1\0\21gruvbox-material\16colorscheme\bcmd\thard gruvbox_material_background\roriginal gruvbox_material_foreground\6g\bvim\0", "config", "gruvbox-material")
+time([[Config for gruvbox-material]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
